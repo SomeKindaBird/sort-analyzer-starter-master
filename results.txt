@@ -1,0 +1,41 @@
+SORT ANALYZER RESULTS
+**********************************************************
+BUBBLE SORT - Average Time to Sort Array
+Random Array: ~150.8 milliseconds
+Reversed Array: ~128.8 milliseconds
+Nearly Sorted Array: ~69.2 milliseconds
+Few Unique Array: ~71.8 milliseconds
+
+SELECTION SORT - Average Time to Sort Array
+Random Array: ~54,4 milliseconds
+Reversed Array: ~60.2 milliseconds
+Nearly Sorted Array: ~54.6 milliseconds
+Few Unique Array: ~54 milliseconds
+
+INSERTION SORT - Average Time to Sort Array
+Random Array: ~38.4 milliseconds
+Reversed Array: ~70.8 milliseconds
+Nearly Sorted Array: ~1 millisecond
+Few Unique Array: ~1 millisecond
+***********************************************************
+
+
+SORT ANALYZER OBSERVATIONS
+***********************************************************
+What did you find interesting about the results?
+    How insetion sort was far and away the fastest, as long as the array was already mostly sorted, or didn't have much to sort
+
+The Bubble Sort times should have shown an improved time for the
+Nearly Sorted and Few Unique arrays.  Explain why...
+    The program had to go through less loops in order to fully sort the array, due to less of the values being out of order
+
+The Selection Sort times should have been fairly consistent for 
+all of the data arrays.  Explain why...
+    Because selection sort runs through the whole array no matter what, so the time isn't affected nearly as much by how much it's already been sorted
+
+The Insertion Sort times should have been very fast for the
+Nearly Sorted and Few Unique arrays and much worse for the 
+Reversed array.  Explain why...
+    They were already mostely sorted, or didn't need much sorting, so insertion's skipping over the bits that have already been sorted saved a lot of time
+
+************************************************************
